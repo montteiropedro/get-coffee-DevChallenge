@@ -22,6 +22,7 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header id="header">
     <div id="header-logo">
       <img
@@ -34,20 +35,22 @@
     <nav id="header-nav">
       <ul>
         <li>
-          <a href="">menu</a>
+          <a href="#menu-section">menu</a>
         </li>
         <li>
-          <a href="">contact</a>
+          <a href="#contact-section">contact</a>
         </li>
         <li>
-          <a href="">find us</a>
+          <a href="#footer-section">about us</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main id="main" class="container">
+  <!-- MAIN -->
+  <main id="main">
 
+    <!-- home section -->
     <section id="home-section">
       
       <div>
@@ -115,7 +118,111 @@
 
     </section>
 
+    <!-- menu section -->
+    <section id="menu-section" class="container">
+
+      <!-- 
+        Créditos dos mockups de cafés
+        - <a href='https://www.freepik.com/psd/coffee'>Coffee psd created by xvector - www.freepik.com</a> 
+      -->
+
+      <h1>Menu</h1>
+
+      <div id="menu">
+        <img
+          src="./assets/coffee_mockup_1.jpg" 
+          alt="coffee menu picture"
+        >
+
+        <img
+          src="./assets/coffee_mockup_2.jpg" 
+          alt="coffee menu picture"
+          width="100%"
+        >
+
+        <img
+          src="./assets/coffee_mockup_1.jpg" 
+          alt="coffee menu picture"
+          width="100%"
+        >
+
+        <img
+          src="./assets/coffee_mockup_2.jpg" 
+          alt="coffee menu picture"
+          width="100%"
+        >
+
+        <img
+          src="./assets/coffee_mockup_1.jpg" 
+          alt="coffee menu picture"
+          width="100%"
+        >
+
+        <img
+          src="./assets/coffee_mockup_2.jpg" 
+          alt="coffee menu picture"
+          width="100%"
+        >
+      </div>
+
+    </section>
+
+    
+
   </main>
+
+  <!-- FOOTER -->
+  <footer id="footer-section">
+    
+    <!-- contact section -->
+    <section id="contact-section" class="container">
+
+      <div>
+        <h1 id="contact-section-h1">Contact</h1>
+        <p id="contact-section-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet viverra sem, vitae vestibulum leo. Ut pulvinar elementum eleifend. Nunc id iaculis augue, eu gravida enim.
+        </p>
+  
+        <ul class="contact-links">
+          <li id="email-link">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:">get.coffee@mail.com</a>
+          </li>
+          <li id="tel-link">
+            <i class="fas fa-mobile-alt"></i>
+            <a href="tel:">+55 91 90101-0011</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-card">
+
+        <span>We want to hear you</span>
+
+        <input type="text" name="name" id="name" class="text-input" placeholder="Your name" required>
+        <input type="email" name="email" id="email" class="text-input" placeholder="Your e-mail" required>
+        <textarea name="text-area" id="text-area" class="text-area" placeholder="Message" cols="30" rows="7" required></textarea>
+
+        <input type="submit" value="Send" class="bttn-input">
+
+      </form>
+      
+    </section>
+
+    <!-- about us -->
+    <section id="aboutUs-section" class="container">
+      <div>
+        <h1 id="aboutUs-section-h1">About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet viverra sem, vitae vestibulum leo. Ut pulvinar elementum eleifend. Nunc id iaculis augue, eu gravida enim.
+        </p>
+      </div>
+
+      <!-- essa div foi colocada aqui para manter a seção footer alinhada. Vou procurar uma forma mais correta de alinha o footer, porém, no momento, esta é a solução  -->
+      <div id="placeholder-div"></div>
+    </section>
+    
+  </footer>
 
 </body>
 </html>
