@@ -55,6 +55,7 @@
   .bttn-input {
     cursor: pointer;
 
+    width: 18rem;
     height: 3rem;
 
     border: none;
