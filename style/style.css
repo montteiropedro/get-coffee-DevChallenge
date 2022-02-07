@@ -424,6 +424,10 @@
     font-weight: 700;
   }
 
+  .contact-card .bttn-input {
+    width: auto;
+  }
+
   /* about us section */
   #aboutUs-section {
     height: 50vh;
