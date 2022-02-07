@@ -76,6 +76,28 @@
     gap: 1rem;
   }
 
+  .dot-links {
+    margin: 1rem 0;
+
+    display: flex;
+    gap: 1rem;
+  }
+  .dot-links .dot {
+    cursor: pointer;
+
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+
+    background-color: #bbb;
+
+    transition: background-color 0.5s ease;
+  }
+  .selected {
+    background-color: gray;
+  }
+  
 /* BODY ============================== */
   .body-content {
     overflow-x: hidden;
@@ -250,23 +272,29 @@
   #menu-section {
     margin-bottom: 5rem;
 
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    /* gap: 1rem; */
   }
 
   #menu-section h1 {
-    /* code in here */
+    margin: 0 auto 3rem;
+    /* margin-bottom: 3rem; */
   }
 
   #menu {
-    /* height: 76vh; */
-    /* height: 100vh; */
+    width: 940px;
+    height: 470px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    align-content: center;
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+
+    display: flex;
     gap: 1.5rem;
   }
 
@@ -274,9 +302,37 @@
     width: 100%;
     height: 100%;
   } */
-  #menu img {
-    width: 100%;
+
+  .menu-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    align-content: center;
+    gap: 1.5rem; */
+
+    border-radius: 0.5rem;
+  }
+  .menu-slide .row {
+    max-width: 940px;
+
+    display: flex;
+    gap: 1.5rem;
+  }
+
+
+  .menu-slide .row img {
+    cursor: pointer;
+    
+    width: 297px;
+    /* width: 100%; */
     height: 100%;
+
+    /* width: 100px; */
+    /* height: 100px; */
 
     border-radius: 0.25rem;
   }
