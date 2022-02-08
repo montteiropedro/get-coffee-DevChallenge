@@ -255,8 +255,9 @@
   }
 
   #coffeeCup-img {
-    /* width: auto; */
-    /* height: 336.86px; */
+    position: relative;
+    top: -17px;
+
     width: 150px;
 
     display: flex;
@@ -272,6 +273,7 @@
   #menu-section {
     margin-bottom: 5rem;
 
+    /* min-width: 700px; */
     height: 100vh;
 
     display: flex;
@@ -287,59 +289,68 @@
   }
 
   #menu {
-    width: 940px;
+    max-width: 940px;
     height: 470px;
 
     overflow: hidden;
 
     scroll-behavior: smooth;
 
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  /* #menu-section div {
-    width: 100%;
-    height: 100%;
-  } */
-
-  .menu-slide {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    align-content: center;
     gap: 1.5rem; */
 
-    border-radius: 0.5rem;
-  }
-  .menu-slide .row {
-    max-width: 940px;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, min-content); */
+    align-content: center;
     gap: 1.5rem;
   }
 
+  .menu-slide {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1.5rem; */
 
-  .menu-slide .row img {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    /* grid-template-rows: repeat(2, min-content); */
+    align-content: center;
+    gap: 1.5rem;
+  }
+
+  #menu figure {
+    margin: 0;
+
     cursor: pointer;
-    
-    width: 297px;
-    /* width: 100%; */
+
+    max-width: 297px;
+
+    display: flex;
+
+    transition: 0.3s ease-out;
+  }
+  #menu figure:hover {
+    opacity: 90%;
+  }
+  
+  #menu img {
+    width: 100%;
     height: 100%;
 
-    /* width: 100px; */
-    /* height: 100px; */
-
     border-radius: 0.25rem;
+
+    transition: 0.3s ease-out;
   }
+  
 
   /* FOOTER */
   #footer-section {
     height: 100vh;
+
+    min-width: 730px;
 
     display: flex;
     flex-direction: column;
@@ -357,13 +368,16 @@
   }
 
   #contact-section div:first-of-type {
+    width: 350px;
+    min-width: 223px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   #contact-section div:first-of-type p {
-    width: 350px;
+    max-width: 350px;
   }
 
   .contact-links {
@@ -399,6 +413,7 @@
     top: 70px;
     left: 0;
 
+    /* total hight 348px with padding */
     width: 300px;
     height: 330px;
     min-width: 100px;
@@ -441,8 +456,9 @@
     color: white;
   }
 
-  #aboutUs-section div {
+  #aboutUs-section div:first-of-type {
     width: 350px;
+    min-width: 223px;
     
     display: flex;
     flex-direction: column;
@@ -454,7 +470,164 @@
   }
 
   #placeholder-div {
-    width: 300px;
+    width: 348px;
     /* height: 170px; */
     min-width: 100px;
+  }
+
+/* MEDIA QUERIES ============================== */
+
+  /* iPad Air and iPad Mini */
+  @media screen and (max-width: 820px) {
+    /* header */
+    #header {
+      padding: 0 5rem;
+    }
+
+    /* home section */
+    #home-section {
+      margin: 0 5rem;
+      padding: 0;
+
+      height: calc(50vh - 4.9795rem);
+    }
+
+    #makeYourOrder-div {
+      width: 460px;
+    }
+
+    #makeYourOrder-div p {
+      font-size: 1.8rem;
+    }
+
+    #home-section #scroll-down-div {
+      display: none;
+    }
+
+    /* menu section */
+    #menu-section {
+      margin: 0;
+
+      height: 50vh;
+
+      justify-content: flex-start;
+
+      max-width: 660px;
+    }
+
+    #menu-section h1 {
+      display: none;
+    }
+
+    /* footer section */
+    #footer-section {
+      height: auto;
+    }
+
+    #contact-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      /* 300px */
+      height: 18.75rem;
+    }
+    #contact-section div:first-of-type {
+      width: 240px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #aboutUs-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      /* 250px */
+      height: 15.625rem;
+    }
+    #aboutUs-section div:first-of-type {
+      width: 240px;
+    }
+  }
+
+  /* Surface Pro 7 */
+  @media screen and (max-width: 912px) {
+    .container {
+      padding: 0 6rem;
+    }
+
+    /* header */
+    #header {
+      padding: 0 6rem;
+    }
+
+    /* home section */
+    #home-section {
+      margin: 0 6rem;
+      padding: 0;
+
+      height: calc(50vh - 4.9795rem);
+    }
+
+    #makeYourOrder-div {
+      width: 460px;
+    }
+
+    #makeYourOrder-div p {
+      font-size: 1.8rem;
+    }
+
+    #home-section #scroll-down-div {
+      display: none;
+    }
+
+    /* menu section */
+    #menu-section {
+      margin: 0;
+
+      height: 50vh;
+
+      justify-content: flex-start;
+    }
+
+    #menu-section h1 {
+      display: none;
+    }
+
+    /* footer section */
+    #footer-section {
+      height: auto;
+    }
+
+    #contact-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      /* 300px */
+      height: 18.75rem;
+    }
+    #contact-section div:first-of-type {
+      width: 240px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #aboutUs-section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      /* 250px */
+      height: 15.625rem;
+    }
+    #aboutUs-section div:first-of-type {
+      width: 240px;
+    }
+  }
+
+  /* Surface Duo */
+  @media screen and (max-width: 540px) {
+    
   }
