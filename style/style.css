@@ -477,6 +477,43 @@
   }
 
 /* MEDIA QUERIES ============================== */
+  
+  /* Above 4K ------------------------------ */
+  @media screen and (min-width: 2560px) {
+    .container {
+      padding: 0 45rem;
+    }
+
+    #header {
+      padding: 0 45rem;
+    }
+
+    #home-section {
+      margin: 0 45rem;
+      
+      height: 50vh;
+    }
+
+    #home-section #scroll-down-div {
+      display: none;
+    }
+
+    @media screen and (max-height: 1050px) {
+      #home-section {
+        height: calc(100vh - 4.9795rem);
+      }
+
+      #home-section #scroll-down-div {
+        display: flex;
+      }
+
+      #menu-section {
+        height: auto;
+      }
+    }
+  }
+
+
 
   /* 4K ------------------------------ */
   @media screen and (max-width: 2560px) {
@@ -497,8 +534,6 @@
     #home-section #scroll-down-div {
       display: none;
     }
-
-    
 
     @media screen and (max-height: 1050px) {
       #home-section {
