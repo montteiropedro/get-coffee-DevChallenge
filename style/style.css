@@ -1197,14 +1197,19 @@ ul {
 
 
 
-  @media screen and (max-width: 280px) {
+  /* Galaxy Fold */
+  @media screen and (max-width: 310px) {
     .container {
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
 
     /* header */
     #header {
       padding: 0 1rem;
+    }
+
+    #home-section {
+      margin: 0 2rem;
     }
   }
 
