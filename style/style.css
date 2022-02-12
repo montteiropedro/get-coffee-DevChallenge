@@ -1157,7 +1157,7 @@ ul {
 
     /* home section */
     #home-section {
-      height: calc(45vh - 3.734375rem);
+      height: calc(100vh - 3.734375rem);
     }
 
     #home-section div:first-of-type {
@@ -1172,6 +1172,10 @@ ul {
 
     #coffeeCup-img {
       display: none;
+    }
+
+    #home-section #scroll-down-div {
+      display: flex;
     }
 
     /* menu section */
@@ -1339,11 +1343,7 @@ ul {
         display: none;
       }
     }
-
-
-
   
-
 
 
   /* iPhone 5, 6, 7 and 8 ------------------------------ */
@@ -1357,13 +1357,9 @@ ul {
       margin: 0 2rem;
 
       height: calc(100vh - 5.35625rem);
-
-      justify-content: space-between;
     }
 
     #home-section div:first-of-type {
-      margin-top: 1rem;
-
       height: auto;
     }
 
@@ -1378,11 +1374,7 @@ ul {
     }
 
     #home-section #scroll-down-div {
-      margin-bottom: 5rem;
-
       display: flex;
-
-      font-size: 0.9rem;
     }
     #home-section #scroll-down-div img {
       width: 15px;
@@ -1482,6 +1474,18 @@ ul {
       #aboutUs-section {
         justify-content: center;
       }
+
+
+
+      /* Galaxy S8+ landscape mode */
+      @media screen and (width: 740px) {
+        /* menu section */
+        #menu-section {
+          padding: 1rem 5rem;
+        }
+      }
+
+
 
       /* iPhone X landscape mode */
       @media screen and (width: 812px) {
