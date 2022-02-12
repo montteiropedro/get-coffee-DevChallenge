@@ -1143,6 +1143,7 @@ ul {
 
     /* header */
     #header {
+      padding: 0 1rem;
       flex-direction: column;
     }
 
