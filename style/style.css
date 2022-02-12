@@ -1512,6 +1512,12 @@ ul {
     #home-section {
       margin: 0 2rem;
     }
+
+    @media screen and (max-height: 500px) {
+      #home-section #scroll-down-div {
+        display: none;
+      }
+    }
   }
 
 
@@ -1547,23 +1553,6 @@ ul {
         }
       }
     }
-
-
-  /* Galaxy Fold */
-  @media screen and (max-width: 280px) {
-    .container {
-      padding: 0 1rem;
-    }
-
-    /* header */
-    #header {
-      padding: 0 1rem;
-    }
-
-    #home-section {
-      margin: 0 2rem;
-    }
-  }
 
 
 
