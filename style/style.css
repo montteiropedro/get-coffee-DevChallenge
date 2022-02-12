@@ -1518,12 +1518,6 @@ ul {
     #home-section {
       margin: 0 2rem;
     }
-
-    @media screen and (max-height: 600px) {
-      #home-section #scroll-down-div {
-        display: none;
-      }
-    }
   }
 
 
@@ -1563,6 +1557,14 @@ ul {
 
 
   /* others max heights */
+  @media screen and (max-height: 600px) {
+    #home-section #scroll-down-div {
+      display: none;
+    }
+  }
+
+
+  
   @media screen and (max-height: 320px) {
     /* home section */
     #home-section div:first-of-type {
