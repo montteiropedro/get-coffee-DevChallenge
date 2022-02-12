@@ -605,6 +605,7 @@ ul {
   }
 
 
+
   /* Next Hub Max, Next Hub and iPad Pro */
   @media screen and (max-width: 1280px) {
     .container {
@@ -654,6 +655,8 @@ ul {
       }
     }
   }
+
+
 
   /* iPad Pro */
   @media screen and (max-width: 1024px) {
@@ -755,31 +758,31 @@ ul {
     }
   }
 
-  /* Surface Pro 7 landscape mode */
-  @media screen and (height: 912px) {
-    @media screen and (width: 1368px) {
-      /* home section */
-      #home-section {
-        height: calc(100vh - 4.9795rem);
-      }
-  
-      #home-section #scroll-down-div {
-        display: flex;
-      }
+    /* Surface Pro 7 landscape mode */
+    @media screen and (height: 912px) {
+      @media screen and (width: 1368px) {
+        /* home section */
+        #home-section {
+          height: calc(100vh - 4.9795rem);
+        }
+    
+        #home-section #scroll-down-div {
+          display: flex;
+        }
 
-      /* menu section */
-      #menu-section {
-        margin: 0;
+        /* menu section */
+        #menu-section {
+          margin: 0;
 
-        height: auto;
-      }
+          height: auto;
+        }
 
-      /* contact section */
-      .contact-card {
-        top: 185px;
+        /* contact section */
+        .contact-card {
+          top: 185px;
+        }
       }
     }
-  }
 
 
 
@@ -820,28 +823,66 @@ ul {
     }
   }
 
-  /* iPad Air landscape mode */
-  @media screen and (height: 820px) {
-    @media screen and (width:1180px) {
-      .container {
-        padding: 0 10rem;
-      }
+    /* iPad Air landscape mode */
+    @media screen and (height: 820px) {
+      @media screen and (width:1180px) {
+        .container {
+          padding: 0 10rem;
+        }
 
-      /* header */
-      #header {
-        padding: 0 10rem;
-      }
+        /* header */
+        #header {
+          padding: 0 10rem;
+        }
 
-      /* home section */
-      #home-section {
-        margin: 0 10rem;
-        padding: 0;
-  
-        height: calc(100vh - 4.9795rem);
+        /* home section */
+        #home-section {
+          margin: 0 10rem;
+          padding: 0;
+    
+          height: calc(100vh - 4.9795rem);
+        }
+    
+        #home-section #scroll-down-div {
+          display: flex;
+        }
+
+        /* menu section */
+        #menu-section {
+          margin: 0;
+
+          height: 70vh;
+        }
+
+        /* contact section */
+        .contact-card {
+          top: 130px;
+        }
       }
-  
-      #home-section #scroll-down-div {
-        display: flex;
+    }
+
+    /* iPad Mini landscape mode */
+    @media screen and (height: 768px) {
+      @media screen and (width: 1024px) {
+        .container {
+          padding: 0 7rem;
+        }
+
+        /* header */
+        #header {
+          padding: 0 7rem;
+        }
+
+        /* home section */
+        #home-section {
+          margin: 0 7rem;
+
+          height: calc(100vh - 4.979375rem);
+        }
+
+        #home-section #scroll-down-div {
+          display: flex;
+        }
       }
 
       /* menu section */
@@ -853,49 +894,21 @@ ul {
 
       /* contact section */
       .contact-card {
-        top: 130px;
+        top: 110px;
       }
     }
-  }
 
-
-
-  /* iPad Mini landscape mode */
-  @media screen and (height: 768px) {
-    @media screen and (width: 1024px) {
-      .container {
-        padding: 0 7rem;
-      }
-
-      /* header */
-      #header {
-        padding: 0 7rem;
-      }
-
+    /* max height 800px */
+    @media screen and (max-height: 800px) {
       /* home section */
       #home-section {
-        margin: 0 7rem;
-
-        height: calc(100vh - 4.979375rem);
+        height: calc(100vh - 3.734375rem);
       }
 
       #home-section #scroll-down-div {
         display: flex;
       }
     }
-
-    /* menu section */
-    #menu-section {
-      margin: 0;
-
-      height: 70vh;
-    }
-
-    /* contact section */
-    .contact-card {
-      top: 110px;
-    }
-  }
 
 
 
@@ -960,6 +973,10 @@ ul {
 
     /* menu section */
     #menu-section {
+      padding-top: 3rem;
+
+      height: fit-content;
+
       justify-content: center;
     }
     #menu {
@@ -1018,10 +1035,112 @@ ul {
     }
   }
 
+    /* max height 540px */
+    @media screen and (max-height: 540px) {
+      .container {
+        padding: 0 5rem;
+      }
+
+      /* header */
+      #header {
+        padding: 0 5rem;
+      }
+
+      #header h1 {
+        font-size: 1.5rem;
+      }
+
+      #header img {
+        width: 45px;
+      }
+
+      /* home section */
+      #home-section {
+        margin: 0 5rem;
+        padding: 0;
+
+        height: calc(100vh - 3.734375rem);
+      }
+
+      #home-section div:first-of-type {
+        height: auto;
+
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      #makeYourOrder-div p {
+        text-align: center;
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      #makeYourOrder-div {
+        gap: 1rem;
+      }
+
+      #home-section #scroll-down-div {
+        display: none;
+      }
+
+      /* menu section */
+      #menu-section {
+        height: 70vh;
+        justify-content: center;
+      }
+
+      #menu {
+        margin: 0;
+
+        height: auto;
+      }
+
+      .dot-links .dot {
+        width: 10px;
+        height: 10px;
+      }
+
+      /* contact section */
+      #contact-section {
+        padding-top: 0; padding-bottom: 0;
+
+        height: 50vh;
+      }
+
+      #contact-section-h1 {
+        font-size: 1rem;
+      }
+      #contact-section p,
+      .contact-links a,
+      .contact-links .fas {
+        font-size: 0.9rem;
+      }
+
+      /* about us section */
+      #aboutUs-section {
+        padding-top: 0; padding-bottom: 0;
+
+        height: 50vh;
+      }
+
+      #aboutUs-section-h1 {
+        font-size: 1rem;
+      }
+      #aboutUs-section p {
+        font-size: 0.9rem;
+      }
+    }
+
 
 
   /* iPhone XR */
   @media screen and (max-width: 414px) {
+    .container {
+      padding: 0 2rem;
+    }
+
     /* header */
     #header {
       flex-direction: column;
@@ -1057,6 +1176,10 @@ ul {
 
     /* menu section */
     #menu-section {
+      padding-top: 1rem;
+
+      height: fit-content;
+
       justify-content: flex-end;
       gap: 0.5rem;
     }
@@ -1069,6 +1192,8 @@ ul {
 
     /* contact section */
     #contact-section {
+      padding: 0 3rem;
+
       justify-content: center;
     }
     #contact-section div:first-of-type {
@@ -1084,6 +1209,8 @@ ul {
 
     /* about us section */
     #aboutUs-section {
+      padding: 0 3rem;
+
       justify-content: center;
     }
     #aboutUs-section div:first-of-type {
@@ -1097,6 +1224,125 @@ ul {
       display: none;
     }
   }
+
+    /* max height 414px */
+    @media screen and (max-height: 414px) {
+      .container {
+        padding: 0 10rem;
+      }
+
+      /* header */
+      #header {
+        padding: 0 3.5rem;
+      }
+
+      /* home section */
+      #home-section {
+        margin: 0 10rem;
+        padding: 0;
+
+        height: calc(100vh - 3.734375rem);
+      }
+
+      #home-section div:first-of-type {
+        height: auto;
+
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      #makeYourOrder-div p {
+        text-align: center;
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      #coffeeCup-img {
+        display: none;
+      }
+
+      #home-section #scroll-down-div {
+        display: none;
+      }
+
+      /* menu section */
+      #menu-section {
+        height: 100vh;
+        justify-content: center;
+      }
+
+      #menu {
+        margin: 0;
+
+        height: auto;
+      }
+
+      .dot-links .dot {
+        width: 10px;
+        height: 10px;
+      }
+
+      /* contact section */
+      #contact-section {
+        padding-top: 0; padding-bottom: 0;
+
+        height: 100vh;
+      }
+
+      #contact-section div:first-of-type {
+        width: auto;
+      }
+
+      #contact-section-h1 {
+        text-align: center;
+
+        font-size: 1.5rem;
+      }
+      #contact-section p,
+      .contact-links a,
+      .contact-links .fas {
+        text-align: center;
+
+        font-size: 0.9rem;
+      }
+      .contact-links {
+        align-items: center;
+      }
+      .contact-card {
+        display: none;
+      }
+
+      /* about us section */
+      #aboutUs-section {
+        padding-top: 0; padding-bottom: 0;
+
+        height: 100vh;
+      }
+
+      #aboutUs-section div:first-of-type {
+        width: auto;
+      }
+
+      #aboutUs-section-h1 {
+        text-align: center;
+
+        font-size: 1.5rem;
+      }
+      #aboutUs-section p {
+        text-align: center;
+
+        font-size: 0.9rem;
+      }
+      #placeholder-div {
+        display: none;
+      }
+    }
+
+
+
+  
 
 
 
@@ -1144,7 +1390,9 @@ ul {
 
     /* menu section */
     #menu-section {
-      height: 70vh;
+      padding: 1rem;
+
+      height: fit-content;
 
       justify-content: flex-end;
 
@@ -1195,6 +1443,55 @@ ul {
     }
   }
 
+    /* max height 375px */
+    @media screen and (max-height: 375px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      /* header */
+      #header {
+        padding: 0 1.5rem;
+      }
+
+      /* home section */
+      #home-section {
+        margin: 0 1rem;
+      }
+
+      #makeYourOrder-div .bttn-input {
+        height: 2.5rem;
+      }
+
+      .socialMedia-links .fab {
+        font-size: 1rem;
+      }
+
+      /* menu section */
+      #menu-section {
+        padding: 1rem 3rem;
+        height: fit-content;
+      }
+
+      /* contact section */
+      #contact-section {
+        justify-content: center;
+      }
+
+      /* about us section */
+      #aboutUs-section {
+        justify-content: center;
+      }
+
+      /* iPhone X landscape mode */
+      @media screen and (width: 812px) {
+        /* menu section */
+        #menu-section {
+          padding: 1rem 6rem;
+        }
+      }
+    }
+
 
 
   /* Moto Z Play and Galaxy Fold */
@@ -1215,256 +1512,40 @@ ul {
 
 
 
-  /* MEDIAS WITH HEIGHTS */
-  @media screen and (max-height: 800px) {
-    /* home section */
-    #home-section {
-      height: calc(100vh - 3.734375rem);
-    }
+  /* iPhone 4 */
+  @media screen and (max-width: 320px) {
+    @media screen and (max-height: 480px) {
+      /* home section */
+      #home-section #scroll-down-div {
+        display: none;
+      }
 
-    #home-section #scroll-down-div {
-      display: flex;
-    }
-  }
+      /* menu section */
+      #menu-section {
+        padding: 2.5rem 1rem;
 
+        height: fit-content;
 
+        justify-content: flex-end;
 
-  @media screen and (max-height: 540px) {
-    .container {
-      padding: 0 5rem;
-    }
-
-    /* header */
-    #header {
-      padding: 0 5rem;
-    }
-
-    #header h1 {
-      font-size: 1.5rem;
-    }
-
-    #header img {
-      width: 45px;
-    }
-
-    /* home section */
-    #home-section {
-      margin: 0 5rem;
-      padding: 0;
-
-      height: calc(100vh - 3.734375rem);
-    }
-
-    #home-section div:first-of-type {
-      height: auto;
-
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    #makeYourOrder-div p {
-      text-align: center;
-
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-
-    #makeYourOrder-div {
-      gap: 1rem;
-    }
-
-    #home-section #scroll-down-div {
-      display: none;
-    }
-
-    /* menu section */
-    #menu-section {
-      height: 70vh;
-      justify-content: center;
-    }
-
-    #menu {
-      margin: 0;
-
-      height: auto;
-    }
-
-    .dot-links .dot {
-      width: 10px;
-      height: 10px;
-    }
-
-    /* contact section */
-    #contact-section {
-      padding-top: 0; padding-bottom: 0;
-
-      height: 50vh;
-    }
-
-    #contact-section-h1 {
-      font-size: 1rem;
-    }
-    #contact-section p,
-    .contact-links a,
-    .contact-links .fas {
-      font-size: 0.9rem;
-    }
-
-    /* about us section */
-    #aboutUs-section {
-      padding-top: 0; padding-bottom: 0;
-
-      height: 50vh;
-    }
-
-    #aboutUs-section-h1 {
-      font-size: 1rem;
-    }
-    #aboutUs-section p {
-      font-size: 0.9rem;
+        max-width: 660px;
+      }
     }
   }
 
-
-
-  @media screen and (max-height: 414px) {
-    .container {
-      padding: 0 10rem;
+    /* max height 320px - min width 658px */
+    @media screen and (max-height: 320px) {
+      @media screen and (min-width: 658px) {
+        /* menu section */
+        #menu-section {
+          padding: 1rem 5rem;
+          height: fit-content;
+        }
+      }
     }
 
-    /* header */
-    #header {
-      padding: 0 3.5rem;
-    }
 
-    /* home section */
-    #home-section {
-      margin: 0 10rem;
-      padding: 0;
-
-      height: calc(100vh - 3.734375rem);
-    }
-
-    #home-section div:first-of-type {
-      height: auto;
-
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    #makeYourOrder-div p {
-      text-align: center;
-
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-
-    #coffeeCup-img {
-      display: none;
-    }
-
-    #home-section #scroll-down-div {
-      display: none;
-    }
-
-    /* menu section */
-    #menu-section {
-      height: 100vh;
-      justify-content: center;
-    }
-
-    #menu {
-      margin: 0;
-
-      height: auto;
-    }
-
-    .dot-links .dot {
-      width: 10px;
-      height: 10px;
-    }
-
-    /* contact section */
-    #contact-section {
-      padding-top: 0; padding-bottom: 0;
-
-      height: 100vh;
-    }
-
-    #contact-section div:first-of-type {
-      width: auto;
-    }
-
-    #contact-section-h1 {
-      text-align: center;
-
-      font-size: 1.5rem;
-    }
-    #contact-section p,
-    .contact-links a,
-    .contact-links .fas {
-      text-align: center;
-
-      font-size: 0.9rem;
-    }
-    .contact-links {
-      align-items: center;
-    }
-    .contact-card {
-      display: none;
-    }
-
-    /* about us section */
-    #aboutUs-section {
-      padding-top: 0; padding-bottom: 0;
-
-      height: 100vh;
-    }
-
-    #aboutUs-section div:first-of-type {
-      width: auto;
-    }
-
-    #aboutUs-section-h1 {
-      text-align: center;
-
-      font-size: 1.5rem;
-    }
-    #aboutUs-section p {
-      text-align: center;
-
-      font-size: 0.9rem;
-    }
-    #placeholder-div {
-      display: none;
-    }
-  }
-
-
-
-  @media screen and (max-height: 375px) {
-    .container {
-      padding: 0 6rem;
-    }
-
-    /* home section */
-    #home-section {
-      margin: 0 6rem;
-    }
-
-    #makeYourOrder-div .bttn-input {
-      height: 2.5rem;
-    }
-
-    .socialMedia-links .fab {
-      font-size: 1rem;
-    }
-  }
-
-
-
+  /* others max heights */
   @media screen and (max-height: 320px) {
     /* home section */
     #home-section div:first-of-type {
