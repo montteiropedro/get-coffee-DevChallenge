@@ -1143,7 +1143,7 @@ ul {
 
     /* header */
     #header {
-      padding: 0 1rem;
+      padding: 0;
       flex-direction: column;
     }
 
@@ -1353,6 +1353,11 @@ ul {
       padding: 0 2rem;
     }
     
+    /* header */
+    #header {
+      padding: 0;
+    }
+
     /* home section */
     #home-section {
       margin: 0 2rem;
@@ -1507,7 +1512,7 @@ ul {
 
     /* header */
     #header {
-      padding: 0 1rem;
+      padding: 0;
     }
 
     #home-section {
