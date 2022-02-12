@@ -1549,6 +1549,24 @@ ul {
     }
 
 
+  /* Galaxy Fold */
+  @media screen and (max-width: 280px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    /* header */
+    #header {
+      padding: 0 1rem;
+    }
+
+    #home-section {
+      margin: 0 2rem;
+    }
+  }
+
+
+
   /* others max heights */
   @media screen and (max-height: 320px) {
     /* home section */
